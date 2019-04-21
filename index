@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>COLORS-array-to-hex-rgb-hsl</title>
+<style>
+*{
+  box-sizing:border-box;
+}
+body {
+  font-family: consolas;
+}
+
+.color {
+  height: 190px;
+  padding: 1em;
+  margin: 0.5em;
+  border: 1px solid #d9d9d9;
+  flex: 1 0 230px;
+}
+
+label {
+  margin: 0.5em;
+  flex: 1 0 230px;
+}
+textarea{width:100%;}
+
+#swatches,
+#tas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+<div id="tas">
+<label>
+Input: paste some hex colors<br>
+<textarea id="ta" rows="4" cols="50" placeholder="#5F3152, #874D6E, #DCAB74, #F4D8A0, #5C9696"></textarea></label>
+<label>
+Output: copy the array<br>
+<textarea id="output" rows="4" cols="50"></textarea></label>
+</div>
+<div id="swatches"></div>
+<script src='https://codepen.io/enxaneta/pen/15d04eb1b8b68c95cd5298b46b2eabb8.js'></script>
+<div id="tas">
+<label>
+Input: paste some hex colors<br>
+<textarea id="ta" rows="4" cols="50" placeholder="#5F3152, #874D6E, #DCAB74, #F4D8A0, #5C9696"></textarea></label>
+<label>
+Output: copy the array<br>
+<textarea id="output" rows="4" cols="50"></textarea></label>
+</div>
+<div id="swatches"></div>
+<script src='colors.js'></script>
+<script src='script.js'></script>
+<script id="rendered-js"></script>
+
+</body>
+</html>
